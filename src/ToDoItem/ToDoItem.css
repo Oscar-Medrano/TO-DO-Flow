@@ -1,0 +1,65 @@
+.ToDoItem {
+    background: rgba(255, 255, 255, 0.5);
+
+    /* Aplica el filtro de desenfoque al fondo del contenedor */
+    backdrop-filter: blur(10px);
+    color: black;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+    box-shadow: 0px 5px 50px rgba (32, 35, 41, 0.15);
+    border: 2px solid;
+    border-radius: 25px;
+}
+
+.TodoItem-p {
+    margin: 24px 0 24px 24px;
+    width: calc(100% - 120px);
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.ToDoItem-p--complete {
+    text-decoration: line-through;
+}
+
+.Icon {
+        background-color: rgb(170, 219, 225);
+        box-shadow: 0px 5px 25px rgba(255, 249, 249, 0);
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        font-size: 50px;
+        position: fixed;
+        bottom: 24px;
+        right: 24px;
+        font-weight: bold;
+        font-size: 22px;
+        color: #FAFAFA;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 34px;
+        width: 34px;
+}
+
+.Icon-check {
+    position: absolute;
+    left: 12px;
+}
+.Icon-check--active{
+    color: #4caf50;
+}
+
+.Icon-delete {
+    position: absolute;
+    top: -24px;
+    right: 0;
+}
+
+.Icon-delete:hover {
+    color: red;
+}

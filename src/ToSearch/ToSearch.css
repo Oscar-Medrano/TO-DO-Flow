@@ -1,0 +1,31 @@
+.ToSearch {
+    background: rgba(255, 255, 255, 0.5);
+
+    /* Aplica el filtro de desenfoque al fondo del contenedor */
+    backdrop-filter: blur(10px);
+    border-radius: 2px;
+    border: 2px solid #151719;
+    margin: 0 24px;
+    height: 64px;
+    width: calc(100% - 62px);
+    font-size: 24px;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Solway', serif;
+    font-weight: 400;
+    color: #1E1E1F;
+    box-shadow: 0px 5px 50px rgba(32, 35, 41, 0.25);
+    border: 2px solid;
+    border-radius: 25px;
+}
+
+.ToSearch::placeholder {
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Solway', serif;
+    font-weight: 400;
+    color: #46655b86;
+}
+
+.ToSearch:focus{
+    outline-color: aqua;
+}
