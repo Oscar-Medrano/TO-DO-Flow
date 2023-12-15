@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Oscar-Medrano/TO-DO-Flow.git/static/css/main.67ff426c.css",
+    "main.js": "/Oscar-Medrano/TO-DO-Flow.git/static/js/main.d2965d66.js",
+    "static/media/norway.jpg": "/Oscar-Medrano/TO-DO-Flow.git/static/media/norway.029d7d837d9291ada77c.jpg",
+    "index.html": "/Oscar-Medrano/TO-DO-Flow.git/index.html",
+    "static/media/delete.svg": "/Oscar-Medrano/TO-DO-Flow.git/static/media/delete.7018c4465589031bd51c8efbe21df9ca.svg",
+    "static/media/check.svg": "/Oscar-Medrano/TO-DO-Flow.git/static/media/check.e9a948bba52a34123d2ed7aeda0ea495.svg",
+    "main.67ff426c.css.map": "/Oscar-Medrano/TO-DO-Flow.git/static/css/main.67ff426c.css.map",
+    "main.d2965d66.js.map": "/Oscar-Medrano/TO-DO-Flow.git/static/js/main.d2965d66.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.67ff426c.css",
+    "static/js/main.d2965d66.js"
+  ]
+}
