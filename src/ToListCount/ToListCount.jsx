@@ -7,11 +7,11 @@ function ToListCount() {
 
   let message = '';
   if (completedTodos < totalTodos) {
-      message = `You have completed ${completedTodos} of ${totalTodos} Goals`;
+      message = `You have finished ${completedTodos} of ${totalTodos} To-Do's`;
   } else if (totalTodos === completedTodos && totalTodos !== 0) {
-      message = `¡Congratulations you have finished all your goals for today! 🥳.`;
+      message = `¡Congratulations you have finished all your To-Do's for today! 🥳.`;
   } else if (totalTodos === 0) {
-      message = `Insert a new goal in the plus button 👇🏻`;
+      message = `Insert a new To-Do in the plus button`;
   }
 
   return (

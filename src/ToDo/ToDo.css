@@ -1,4 +1,7 @@
 .ToDo{
     margin: 0;
     padding: 0 0 56px 0;
-    list-style: none}
+    display: flex; /* Añade flexbox al contenedor padre */
+    flex-direction: column; /* Alinea los hijos verticalmente */
+    margin-bottom: 50px; /* Añade un margen inferior */
+}

@@ -6,7 +6,7 @@ function ToSearch(){
     const {searchValue, setSearchValue} = React.useContext(Context)
     return(
         <input 
-            placeholder='Find your goal'
+            placeholder='Find your To-Do'
             className="ToSearch"
             value = {searchValue}
             onChange = {(event) =>{

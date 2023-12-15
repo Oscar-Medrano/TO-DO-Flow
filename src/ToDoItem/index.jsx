@@ -4,22 +4,21 @@ import './ToDoItem.css';
 
 function ToDoItem(props) {
   return (
-    <li className="ToDoItem">
-      <CompleteIcon
-        completed={props.completed}
-        onComplete={props.onComplete}
-      />
-
+    <div className="ToDoItem">
+      <div className="IconContainer">
+        <CompleteIcon
+          completed={props.completed}
+          onComplete={props.onComplete}
+        />
+        <DeleteIcon
+          onDelete={props.onDelete}
+        />
+      </div>
       <p className={`ToDoItem-p ${props.completed && "ToDoItem-p--complete"}`}>
         {props.text}
       </p>
-
-      <DeleteIcon
-        onDelete={props.onDelete}
-      />
-    </li>
+    </div>
   );
 }
 
 export { ToDoItem };
-

@@ -4,18 +4,10 @@ import {useLocalStorage} from './useLocalStorage'
 const Context = React.createContext();
 
 function ToDoProvider({ children }){
-    const defaultToDo = [
-        {text: "Welcome to Wish List!", completed: false},
-        {text: "You can create your goals with the ➕ buttom", completed: false},
-        {text: "When you finish your goal, cross it off with ✅ ", completed: false},
-        {text: "If you don't like one of your goals, erease it with ❌", completed: false},
-        {text: "Find your goals with the navbar", completed: false},
-        {text: "Developed by Oscar Medrano", completed: true},
-      ];
-    
-    const [todos, saveToDos] = useLocalStorage('TODOS_V1', defaultToDo); // Use the hook here
 
-    const [openModal, setOpenModal] = React.useState(true) //Initial Value = False === closed window
+    const [todos, saveToDos] = useLocalStorage('TODOS_V1', []); 
+
+    const [openModal, setOpenModal] = React.useState(false)
     
     const completedTodos = todos.filter(todo => todo.completed).length;
     const totalTodos = todos.length;
@@ -29,23 +21,34 @@ function ToDoProvider({ children }){
         return toDoText.includes(searchText);
     }  
     )
-    
-    const completeToDo = (text) => {
+
+    const addTodo = (text)=> {
         const newTodo = [...todos];
-        const toDoIndex = newTodo.findIndex(
-            (todo) => todo.text === text
-        );
-        newTodo[toDoIndex].completed = true;
-        saveToDos (newTodo); //when we Used setTodos Now we use saveToDos
+        
+        newTodo.push({
+            id: new Date().toISOString(), // Añade un identificador único a cada todo
+            text,
+            completed: false,
+        });
+        saveToDos(newTodo);
     }
     
-    const deleteToDo = (text) => {
+    const completeToDo = (id) => {
         const newTodo = [...todos];
         const toDoIndex = newTodo.findIndex(
-          (todo) => todo.text === text
+            (todo) => todo.id === id // Usa el id en lugar del texto para encontrar el todo
+        );
+        newTodo[toDoIndex].completed = true;
+        saveToDos(newTodo);
+    }
+    
+    const deleteToDo = (id) => {
+        const newTodo = [...todos];
+        const toDoIndex = newTodo.findIndex(
+          (todo) => todo.id === id // Usa el id en lugar del texto para encontrar el todo
         );
         newTodo.splice(toDoIndex, 1);
-        saveToDos (newTodo);//when we Used setTodos Now we use saveToDos
+        saveToDos(newTodo);
     }
 
     return(
@@ -58,10 +61,11 @@ function ToDoProvider({ children }){
             completeToDo,
             deleteToDo,
             openModal,
-            setOpenModal
+            setOpenModal,
+            addTodo,
         }}>
             { children } 
-        </Context.Provider>//Every component in children it's allowded to use the props in value = {}
+        </Context.Provider>
     );
 }
 

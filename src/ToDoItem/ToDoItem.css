@@ -5,13 +5,22 @@
     backdrop-filter: blur(10px);
     color: black;
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-top: 24px;
     box-shadow: 0px 5px 50px rgba (32, 35, 41, 0.15);
     border: 2px solid;
     border-radius: 25px;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-weight: normal;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: flex-start; /* Alinea los elementos al inicio del contenedor */
+    overflow: hidden; /* Oculta cualquier contenido que se desborde del contenedor */
+    min-height: 50px; /* Establece una altura mínima para el contenedor */
+    height: auto; /* Permite que el contenedor crezca con el contenido */
 }
 
 .TodoItem-p {
@@ -20,6 +29,10 @@
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
+    
+    word-break: break-all; /* Rompe las palabras en el límite de la línea */
+    margin: 10px; /* Añade un margen alrededor del texto */
+    max-width: 100%; /* Asegura que el texto no se desborde del contenedor */
 }
 
 .ToDoItem-p--complete {
@@ -56,10 +69,20 @@
 
 .Icon-delete {
     position: absolute;
-    top: -24px;
-    right: 0;
+    top: 10px; /* Ajusta la posición desde la parte superior */
+    right: 10px; /* Ajusta la posición desde la derecha */
 }
 
 .Icon-delete:hover {
     color: red;
+}
+
+.TodoItem-p {
+    margin: 24px 0 24px 24px;
+    width: calc(100% - 120px);
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    text-align: center; /* Centra el texto */
+    padding: 10px; /* Añade un padding alrededor del texto */
 }

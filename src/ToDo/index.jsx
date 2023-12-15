@@ -3,9 +3,9 @@ import "./ToDo.css"
 
 function ToDo({children}) {
     return(
-        <ul className="ToDo">
+        <div className="ToDo">
             {children}
-        </ul>
+        </div>
     );
 }
     
