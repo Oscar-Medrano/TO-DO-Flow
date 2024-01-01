@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": ".https://github.com/Oscar-Medrano/TO-DO-Flow.git/static/css/main.3d8f2dbd.css",
-    "main.js": ".https://github.com/Oscar-Medrano/TO-DO-Flow.git/static/js/main.ec1f89aa.js",
-    "static/media/norway.jpg": ".https://github.com/Oscar-Medrano/TO-DO-Flow.git/static/media/norway.029d7d837d9291ada77c.jpg",
-    "index.html": ".https://github.com/Oscar-Medrano/TO-DO-Flow.git/index.html",
-    "static/media/delete.svg": ".https://github.com/Oscar-Medrano/TO-DO-Flow.git/static/media/delete.7018c4465589031bd51c8efbe21df9ca.svg",
-    "static/media/check.svg": ".https://github.com/Oscar-Medrano/TO-DO-Flow.git/static/media/check.e9a948bba52a34123d2ed7aeda0ea495.svg",
-    "main.3d8f2dbd.css.map": ".https://github.com/Oscar-Medrano/TO-DO-Flow.git/static/css/main.3d8f2dbd.css.map",
-    "main.ec1f89aa.js.map": ".https://github.com/Oscar-Medrano/TO-DO-Flow.git/static/js/main.ec1f89aa.js.map"
+    "main.css": "./static/css/main.3d8f2dbd.css",
+    "main.js": "./static/js/main.e9d1aee1.js",
+    "static/media/norway.jpg": "./static/media/norway.029d7d837d9291ada77c.jpg",
+    "index.html": "./index.html",
+    "static/media/delete.svg": "./static/media/delete.7018c4465589031bd51c8efbe21df9ca.svg",
+    "static/media/check.svg": "./static/media/check.e9a948bba52a34123d2ed7aeda0ea495.svg",
+    "main.3d8f2dbd.css.map": "./static/css/main.3d8f2dbd.css.map",
+    "main.e9d1aee1.js.map": "./static/js/main.e9d1aee1.js.map"
   },
   "entrypoints": [
     "static/css/main.3d8f2dbd.css",
-    "static/js/main.ec1f89aa.js"
+    "static/js/main.e9d1aee1.js"
   ]
 }
